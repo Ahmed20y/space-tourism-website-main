@@ -1,0 +1,156 @@
+body{
+    background: url(../assets/crew/background-crew-desktop.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+body > .parent{
+    padding-top: 48px ;
+}
+body > .parent .main-text{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+body > .parent .main-text h2.title{
+    display: flex;
+    gap: 24px;
+}
+body > .parent .main-text h2.title div.h2{
+    font-family: "Barlow Condensed",sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    color: var(--color-3);
+}
+body > .parent .main-text >h2.title span{
+    opacity: 25%;
+    font-family: "Barlow Condensed";
+    color: var(--color-3);
+    font-weight: bold;
+    letter-spacing: 4.72px;
+}
+body > .parent .main-text .main-content{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    position: relative;
+}
+@media (max-width:992px){
+    body > .parent .main-text .main-content{
+        flex-direction: column;
+    }
+    body > .parent .main-text .main-content > .text{
+        text-align: center;
+    }
+}
+body > .parent .main-text .main-content > .text{
+display: flex;
+align-items: center;
+
+}
+body > .parent .main-text .main-content > .text h2{
+    font-family: "Bellefair",sans-serif;
+    opacity: 50.42%;
+    font-size: 32px;
+    font-weight: normal;
+    color: var(--color-3);
+ 
+}
+
+body > .parent .main-text .main-content > .text h1{
+    font-family: "Bellefair",sans-serif;
+    font-size: 56px;
+    font-weight: normal;
+    color: var(--color-3);
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+body > .parent .main-text .main-content > .text .bullets{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    display: flex;
+    gap: 40px;
+}
+body > .parent .main-text .main-content > .text .bullets .link{
+    opacity: 17.44%;
+    --value:15px;
+    height: var(--value);
+    width: var(--value);
+    background-color: var(--color-3);
+    border-radius: 50%;
+}
+body > .parent .main-text .main-content > .text .bullets .link:not(.link.active):hover{
+    opacity: 50%;
+}
+body > .parent .main-text .main-content > .text .bullets .link.active{
+    opacity: 100%;
+}
+body > .parent .main-text .main-content .box-image{display: flex;align-items: center;position: relative;}
+
+body > .parent .main-text .main-content .box-image::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #0B0D17, transparent 40%);
+    pointer-events: none;
+
+}
+/* Media */
+
+@media (max-width:992px){
+    body > .parent .main-text .main-content > .text{
+        position: relative;
+    }
+    body > .parent .main-text .main-content > .text .bullets{
+        bottom: -16px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    body > .parent .main-text .main-content > .text h2{font-size: 24px;opacity: 50%;}
+    body > .parent .main-text .main-content > .text h1{font-size: 40px;opacity: 50%;}
+}
+@media (max-width:768px){
+    body > .parent .main-text .main-content > .text h1{font-size: 24px;margin-top: 8px;}
+}
+
+
+@media (min-width:992px){
+    body > .parent .main-text .main-content > .text .box-image picture source,
+    body > .parent .main-text .main-content > .text .box-image img{
+        height: 676px;
+    }
+    
+}
+@media (max-width:991px){
+    body > .parent .main-text .main-content > .text .box-image picture source,
+    body > .parent .main-text .main-content > .text .box-image img{
+        height: 560px;
+    }
+    body > .parent{
+        text-align: center;
+        margin-top: 40px
+    }
+
+}
+@media (max-width:768px){
+    body > .parent{
+        margin-top: 24px
+    }
+    
+body > .parent .main-text h2.title {
+    justify-content: center;
+    }
+    body > .parent .main-text .main-content > .text .box-image picture source,
+    body > .parent .main-text .main-content > .text .box-image img{
+        height: 340px;
+        
+    }
+    body > .parent .main-text .main-content .box-image{
+        padding-bottom: 24px;
+    }
+}

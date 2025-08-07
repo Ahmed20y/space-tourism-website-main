@@ -1,0 +1,133 @@
+body{
+    background: url(../assets/destination/background-destination-desktop.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+body > .parent .container .main-text{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+body > .parent .container .main-text h2.tilte{
+    margin-left: 24px;
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+body > .parent .container .main-text .main-content{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+body > .parent .container .main-text .main-content .box:nth-of-type(2) > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+body > .parent .container .main-text .main-content .box:nth-of-type(2) hr{
+    background-color: var(--color-3);
+    opacity: 25%;
+    height: 1px;
+}
+body > .parent .container .main-text .main-content .box:nth-of-type(2) .text-box{
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+body > .parent .container .main-text .main-content .box:nth-of-type(2) .text-box .box p{
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--color-2);
+}
+body > .parent .container .main-text .main-content .box:nth-of-type(2) .text-box div{
+    font-family:"Bellefair" , sans-serif ;
+    letter-spacing: 0;
+    font-size: 28px;
+    color: var(--color-3);
+}
+/* start media */
+
+
+
+@media (max-width:992px) {
+    body > .parent .container .main-text .main-content{
+        flex-direction: column;
+    }
+}
+
+body > .parent .container .main-text .main-content .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px; 
+}
+@media (min-width:993px){
+    body > .parent .container .main-text .main-content .box.image img{
+        width: 480px;
+        height: 480px;
+    }
+    body > .parent .container .main-text .main-content .box.image{
+        padding: 127px 29.5px;
+    }
+
+}
+
+@media (max-width:768px){
+    body > .parent .container .main-text .main-content .box.image img{
+        width: 300px;
+        height: 300px;
+    }
+
+    body > .parent .container .main-text .main-content .box.image{
+        padding: 42px 0;
+        width: fit-content;
+        margin: auto;
+    }
+}
+@media (max-width:767px){
+    body > .parent .container .main-text .main-content .box.image img{
+        width: 150px;
+        height:150px;
+    }
+    body > .parent .container .main-text .main-content .box.image{
+        padding: 26.5px 0;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+
+@media (min-width:992px) {
+    body > .parent .container .main-text .main-content .box:nth-of-type(2) > .text h1{
+        font-size: 96px;
+        color: var(--color-3);
+        text-align: center;
+    }
+}
+
+@media (min-width:786px){
+    body > .parent .container .main-text .main-content .box:nth-of-type(2) > .text h1{
+        font-size: 80px;
+        color: var(--color-3);
+        text-align: center;
+    }
+}
+@media (max-width:786px){
+    body > .parent .container .main-text .main-content .box:nth-of-type(2) > .text h1{
+        font-size: 56px;
+        color: var(--color-3);
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    body > .parent .container .main-text .main-content .box:nth-of-type(2) .text-box{
+        flex-direction: column;
+    }
+}
